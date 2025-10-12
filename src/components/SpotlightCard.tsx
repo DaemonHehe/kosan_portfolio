@@ -44,8 +44,8 @@ const SpotlightCard = ({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       tabIndex={0}
-      className={`relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl transition-colors duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-[#76c5ff]/40 sm:p-8 ${
-        showHighlight ? 'bg-white/10' : ''
+      className={`relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 text-slate-900 shadow-2xl transition-colors duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-sky-400/40 dark:border-white/10 dark:bg-white/5 dark:text-white dark:focus:ring-[#76c5ff]/40 sm:p-8 ${
+        showHighlight ? 'bg-slate-50 dark:bg-white/10' : ''
       } ${className}`.trim()}
     >
       <div

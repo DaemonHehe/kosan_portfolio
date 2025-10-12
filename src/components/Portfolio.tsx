@@ -62,7 +62,7 @@ const Portfolio = () => {
   return (
     <section
       id='portfolio'
-      className='relative scroll-mt-32 bg-[#040811] py-24 text-white'
+      className='relative scroll-mt-32 bg-slate-100 py-24 text-slate-900 transition-colors duration-300 dark:bg-[#040811] dark:text-white'
     >
       <div className='mx-auto max-w-6xl px-5 sm:px-8 md:px-12 lg:px-16'>
         <div
@@ -72,8 +72,8 @@ const Portfolio = () => {
           }`}
         >
           <div className='text-center md:text-left'>
-            <p className='text-xs uppercase tracking-[0.35em] text-[#76c5ff]'>Portfolio</p>
-            <h2 className='mt-6 text-4xl font-semibold leading-tight md:text-5xl'>
+            <p className='text-xs uppercase tracking-[0.35em] text-sky-500 transition-colors dark:text-[#76c5ff]'>Portfolio</p>
+            <h2 className='mt-6 text-4xl font-semibold leading-tight text-slate-900 transition-colors dark:text-white md:text-5xl'>
               A showcase of modern, purposeful, and performance-driven digital builds.
             </h2>
           </div>
@@ -82,25 +82,25 @@ const Portfolio = () => {
             {projects.map((project, index) => (
               <article
                 key={project.title}
-                className='group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5 transition-transform duration-500 hover:-translate-y-3 hover:bg-white/10'
+                className='group relative overflow-hidden rounded-[28px] border border-slate-200 bg-white transition-transform duration-500 hover:-translate-y-3 hover:shadow-xl dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10'
                 style={{ transitionDelay: isInView ? `${index * 80}ms` : '0ms' }}
               >
                 <div
-                  className='h-56 w-full bg-cover bg-center'
+                  className='h-56 w-full bg-cover bg-center transition duration-500'
                   style={{ backgroundImage: `url(${project.image})` }}
                 />
-                <div className='absolute inset-0 bg-gradient-to-t from-[#03040a] via-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-80' />
-                <div className='relative flex flex-col gap-4 px-6 pb-8 pt-6'>
-                  <span className='text-xs uppercase tracking-[0.3em] text-white/50'>
+                <div className='absolute inset-0 bg-gradient-to-t from-white via-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-80 dark:from-[#03040a]' />
+                <div className='relative flex flex-col gap-4 px-6 pb-8 pt-6 text-slate-700 transition-colors dark:text-white'>
+                  <span className='text-xs uppercase tracking-[0.3em] text-slate-500 transition-colors dark:text-white/50'>
                     {project.category}
                   </span>
-                  <h3 className='text-xl font-semibold text-white'>{project.title}</h3>
-                  <p className='text-sm text-white/60'>{project.description}</p>
+                  <h3 className='text-xl font-semibold text-slate-900 transition-colors dark:text-white'>{project.title}</h3>
+                  <p className='text-sm text-slate-600 transition-colors dark:text-white/60'>{project.description}</p>
                   <a
                     href={project.url}
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='mt-2 inline-flex items-center gap-2 text-sm font-medium text-[#76c5ff] transition hover:text-white'
+                    className='mt-2 inline-flex items-center gap-2 text-sm font-medium text-sky-500 transition hover:text-slate-900 dark:text-[#76c5ff] dark:hover:text-white'
                   >
                     View Project
                     <ExternalLink className='h-4 w-4' />
@@ -110,16 +110,16 @@ const Portfolio = () => {
             ))}
           </div>
 
-          <div className='mt-16 flex flex-col items-center justify-between gap-6 rounded-[28px] border border-white/10 bg-white/5 px-8 py-8 text-center md:flex-row md:text-left'>
+          <div className='mt-16 flex flex-col items-center justify-between gap-6 rounded-[28px] border border-slate-200 bg-white px-8 py-8 text-center transition-colors dark:border-white/10 dark:bg-white/5 md:flex-row md:text-left'>
             <div>
-              <p className='text-xs uppercase tracking-[0.3em] text-white/50'>Collaboration</p>
-              <h3 className='mt-3 text-2xl font-semibold text-white'>
+              <p className='text-xs uppercase tracking-[0.3em] text-slate-500 transition-colors dark:text-white/50'>Collaboration</p>
+              <h3 className='mt-3 text-2xl font-semibold text-slate-900 transition-colors dark:text-white'>
                 Let&apos;s build your next full-stack idea together.
               </h3>
             </div>
             <a
               href='mailto:sansheinphyo.dev@gmail.com'
-              className='inline-flex items-center gap-3 rounded-full border border-[#76c5ff]/60 px-8 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#76c5ff] transition hover:border-[#76c5ff] hover:bg-[#76c5ff]/10'
+              className='inline-flex items-center gap-3 rounded-full border border-sky-400/60 px-8 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-sky-500 transition hover:border-sky-500 hover:bg-sky-100 dark:border-[#76c5ff]/60 dark:text-[#76c5ff] dark:hover:border-[#76c5ff] dark:hover:bg-[#76c5ff]/10'
             >
               Start A Project
             </a>
