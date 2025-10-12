@@ -11,7 +11,7 @@ const Portfolio = () => {
       description:
         'A productivity platform to plan daily tasks, log workouts, and track performance. Built with Next.js, React, Tailwind CSS, and Node.js, deployed on Vercel.',
       image:
-        'https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1200',
+        './Top-G.png',
       url: 'https://top-g-rust.vercel.app/',
     },
     {
@@ -20,15 +20,15 @@ const Portfolio = () => {
       description:
         'A 2D platformer built during a 48-hour Game Jam. Focused on rapid prototyping, level design, and teamwork using Unity and C#.',
       image:
-        'https://images.pexels.com/photos/907173/pexels-photo-907173.jpeg?auto=compress&cs=tinysrgb&w=1200',
+        'https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=1200',
     },
     {
       title: 'Intranet : Student Portal',
       category: 'System Analysis and Design',
       description:
-        'A 2D platformer built during a 48-hour Game Jam. Focused on rapid prototyping, level design, and teamwork using Unity and C#.',
+        'A web-based student and teacher portal where instructors can create classes, manage assignments and grades, while students can enroll, submit work, and track academic progress — built with modern web technologies for a seamless learning experience.',
       image:
-        'https://images.pexels.com/photos/907173/pexels-photo-907173.jpeg?auto=compress&cs=tinysrgb&w=1200',
+        './intranet.png',
       url: 'https://github.com/DaemonHehe/IntraSysFrontend',
     },
     {
@@ -37,29 +37,25 @@ const Portfolio = () => {
       description:
         'An AI-driven platform specializing in creating high-converting, SEO-friendly meta titles and descriptions. Leverages machine learning to optimize content for search visibility and click-through rates, perfect for marketers and content creators.',
       image:
-        'https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=1200',
+        './justmayy.png',
       url:
         'https://justmayy.ai/',
     },
     {
       title: 'Job Finding App - Flutter',
-      category: 'SaaS / AI Chatbot',
+      category: 'Flutter / Mobile',
       description:
-        'An AI-driven platform specializing in creating high-converting, SEO-friendly meta titles and descriptions. Leverages machine learning to optimize content for search visibility and click-through rates, perfect for marketers and content creators.',
+        'A Flutter-based mobile app where users can discover and apply for jobs, while companies can post openings and manage applications — built with a clean UI and smooth mobile experience.',
       image:
         'https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      url:
-        'https://justmayy.ai/',
     },
     {
       title: 'Hugging face ML',
-      category: 'SaaS / AI Chatbot',
+      category: 'ML / Classification',
       description:
-        'An AI-driven platform specializing in creating high-converting, SEO-friendly meta titles and descriptions. Leverages machine learning to optimize content for search visibility and click-through rates, perfect for marketers and content creators.',
+        'A machine learning model deployed using Hugging Face — users can upload an image, and the model instantly classifies whether it is a cat or a dog using a custom-trained image classifier.',
       image:
         'https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      url:
-        'https://justmayy.ai/',
     },
   ];
 
