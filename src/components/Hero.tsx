@@ -38,8 +38,8 @@ const Hero = () => {
   const socialLinks = [
     { icon: Linkedin, url: 'https://www.linkedin.com/in/san-shein-phyo/', label: 'LinkedIn' },
     { icon: Github, url: 'https://github.com/DaemonHehe', label: 'Github' },
-    { icon: Instagram, url: 'https://www.instagram.com/', label: 'Instagram' },
-    { icon: Twitter, url: 'https://twitter.com/', label: 'Twitter' },
+    // { icon: Instagram, url: 'https://www.instagram.com/', label: 'Instagram' },
+    // { icon: Twitter, url: 'https://twitter.com/', label: 'Twitter' },
   ];
 
   const scrollToSection = (id: string) => {
