@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative scroll-mt-32 bg-slate-50 py-0 text-slate-900 transition-colors duration-300 dark:bg-[#010103] dark:text-white"
+      className="relative scroll-mt-32 bg-black py-0 text-white transition-colors duration-300 dark:bg-black dark:text-white"
       style={{
         backgroundImage: "url('/kosan3.png')",
         backgroundSize: 'contain',

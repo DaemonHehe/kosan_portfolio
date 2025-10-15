@@ -32,7 +32,7 @@ const Portfolio = () => {
       url: 'https://github.com/DaemonHehe/IntraSysFrontend',
     },
     {
-      title: 'Justmayy | AI Meta Content Generator',
+      title: 'JustMayy',
       category: 'SaaS / AI Chatbot',
       description:
         'An AI-driven platform specializing in creating high-converting, SEO-friendly meta titles and descriptions. Leverages machine learning to optimize content for search visibility and click-through rates, perfect for marketers and content creators.',

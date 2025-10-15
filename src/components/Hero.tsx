@@ -8,8 +8,8 @@ const Hero = () => {
   const socialLinks = [
     { icon: Linkedin, url: 'https://www.linkedin.com/in/san-shein-phyo/', label: 'LinkedIn' },
     { icon: Github, url: 'https://github.com/DaemonHehe', label: 'Github' },
-    { icon: Instagram, url: 'https://www.instagram.com/', label: 'Instagram' },
-    { icon: Twitter, url: 'https://twitter.com/', label: 'Twitter' },
+    // { icon: Instagram, url: 'https://www.instagram.com/', label: 'Instagram' },
+    // { icon: Twitter, url: 'https://twitter.com/', label: 'Twitter' },
   ];
 
   const scrollToSection = (id: string) => {
@@ -25,7 +25,7 @@ const Hero = () => {
       className="relative flex min-h-screen flex-col overflow-hidden bg-slate-50 text-slate-900 transition-colors duration-300 dark:bg-[#05070d] dark:text-white"
     >
       <div
-        className="absolute inset-0 z-20"
+        className="absolute inset-0 z-[5]"
       >
         <Lanyard
           position={[0, 0, 20]}
@@ -36,59 +36,59 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url("${bannerImage}")` }}
       />
-      <div className="relative z-10 flex flex-1 flex-col px-5 pb-14 pt-12 sm:px-8 md:px-16 lg:px-24 xl:px-52">
-        <div className="flex flex-col items-center justify-between gap-5 text-xs uppercase tracking-[0.28em] text-slate-500 transition-colors sm:text-sm md:flex-row dark:text-gray-300">
+      <div className="relative z-10 flex flex-1 flex-col px-5 pb-14 pt-12 sm:px-8 md:px-16 lg:px-24 xl:px-52 pointer-events-none">
+        <div className="pointer-events-auto flex flex-col items-center justify-between gap-5 text-xs uppercase tracking-[0.28em] text-slate-800 transition-colors sm:text-sm md:flex-row dark:text-gray-300">
           <div className="flex flex-wrap items-center justify-center gap-4 text-[0.65rem] tracking-[0.18em] sm:text-xs md:justify-end">
-            <div className="flex items-center gap-2 text-slate-600 transition-colors dark:text-white/70">
+            <div className="flex items-center gap-2 text-slate-900 transition-colors dark:text-white/70">
               <Mail className="h-4 w-4" />
               <span className="tracking-[0.1em]">sansheinphyo.dev@gmail.com</span>
             </div>
-            <div className="hidden items-center gap-2 text-slate-500 transition-colors dark:text-white/60 sm:flex">
+            <div className="hidden items-center gap-2 text-slate-700 transition-colors dark:text-white/60 sm:flex">
               <Phone className="h-4 w-4" />
               <span className="tracking-[0.1em]">+66922483935</span>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 flex flex-1 flex-col items-center justify-center gap-12 text-center md:mt-0 md:items-start md:text-left">
-          <div className="w-full max-w-3xl space-y-10">
+        <div className="pointer-events-none mt-12 flex flex-1 flex-col items-center justify-center gap-12 text-center md:mt-0 md:items-start md:text-left">
+          <div className="pointer-events-none w-full max-w-3xl space-y-10">
             <p className="text-[0.7rem] uppercase tracking-[0.35em] text-sky-500 transition-colors sm:text-xs dark:text-[#76c5ff]">
               Software Developer
             </p>
 
             <h1 className="text-4xl font-semibold leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
-              <span className="block text-slate-900 transition-colors dark:text-white">San Shein</span>
-              <span className="block text-sky-500 transition-colors dark:text-[#76c5ff]">Phyo</span>
+              <span className="block text-slate-950 transition-colors dark:text-white">San Shein</span>
+              <span className="block text-sky-600 transition-colors dark:text-[#76c5ff]">Phyo</span>
             </h1>
 
-            <p className="text-sm text-slate-600 transition-colors sm:text-base dark:text-gray-300">
+            <p className="text-sm text-slate-900 transition-colors sm:text-base dark:text-gray-300">
               Building fast, scalable, and visually refined web experiences with clean architecture, 
               modern frameworks, and a focus on purposeful design and performance.
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-4 sm:justify-start">
+            <div className="pointer-events-auto flex flex-wrap items-center justify-center gap-4 sm:justify-start">
               <button
                 onClick={() => scrollToSection('resume')}
-                className="flex w-full items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-8 py-3 text-sm font-medium uppercase tracking-[0.2em] text-slate-900 transition hover:border-slate-400 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-sky-400/40 dark:border-white/20 dark:bg-white/10 dark:text-white dark:hover:border-white/30 dark:hover:bg-white/20 dark:focus:ring-[#76c5ff]/40 sm:w-auto"
+                className="pointer-events-auto flex w-full items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-8 py-3 text-sm font-medium uppercase tracking-[0.2em] text-slate-900 transition hover:border-slate-400 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-sky-400/40 dark:border-white/20 dark:bg-white/10 dark:text-white dark:hover:border-white/30 dark:hover:bg-white/20 dark:focus:ring-[#76c5ff]/40 sm:w-auto"
               >
                 <User2 className="h-4 w-4" />
                 Resume
               </button>
               <button
                 onClick={() => scrollToSection('portfolio')}
-                className="flex w-full items-center justify-center gap-2 rounded-full border border-sky-400/40 px-8 py-3 text-sm font-medium uppercase tracking-[0.2em] text-sky-500 transition hover:border-sky-500 hover:bg-sky-100 focus:outline-none focus:ring-2 focus:ring-sky-400/40 dark:border-[#76c5ff]/40 dark:text-[#76c5ff] dark:hover:border-[#76c5ff] dark:hover:bg-[#76c5ff]/10 dark:focus:ring-[#76c5ff]/40 sm:w-auto"
+                className="pointer-events-auto flex w-full items-center justify-center gap-2 rounded-full border border-sky-400/40 px-8 py-3 text-sm font-medium uppercase tracking-[0.2em] text-sky-500 transition hover:border-sky-500 hover:bg-sky-100 focus:outline-none focus:ring-2 focus:ring-sky-400/40 dark:border-[#76c5ff]/40 dark:text-[#76c5ff] dark:hover:border-[#76c5ff] dark:hover:bg-[#76c5ff]/10 dark:focus:ring-[#76c5ff]/40 sm:w-auto"
               >
                 <Play className="h-4 w-4" />
                 Portfolio
               </button>
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-4 text-slate-500 transition-colors sm:justify-start dark:text-gray-400">
+            <div className="pointer-events-auto flex flex-wrap items-center justify-center gap-4 text-slate-700 transition-colors sm:justify-start dark:text-gray-400">
               {socialLinks.map(link => (
                 <a
                   key={link.label}
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white transition-colors hover:border-sky-400 hover:text-sky-500 dark:border-white/10 dark:bg-white/5 dark:hover:border-[#76c5ff]/70 dark:hover:text-[#76c5ff]"
+                  className="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white transition-colors hover:border-sky-400 hover:text-sky-500 dark:border-white/10 dark:bg-white/5 dark:hover:border-[#76c5ff]/70 dark:hover:text-[#76c5ff]"
                   aria-label={link.label}
                 >
                   <link.icon className="h-5 w-5" />
